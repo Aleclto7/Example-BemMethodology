@@ -4,29 +4,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css"> 
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
         <title>BEM</title>
     </head>
     <body>
                                                             <!-- Se trabajara con 3 tipos de elementos: Bloques, Elementos, Modificadores -->
-        <div class="contenedos">
-            <div class="card">                              <!-- Bloque -->
-                <a href="" class="card__thumbnail">         <!-- nombre class -> 'nombreBloque__nombreElemento'   -->
-                    <img class="card__img" src="./assets/bosque.jpg" alt="" >
-                </a>
-                <div class="card__textos">
-                    <h3 class="card__titulo">
-                        <a href="#" class="car__enlace-titulo">Lorem ipsum dolor sit amet</a>
-                        <p class="card__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat minima adipisci culpa voluptate expedita provident, cumque iste repellendus totam eum, exercitationem, eaque vel porro saepe eveniet. Ea, minus sit.
-                        Deleniti, reprehenderit laudantium sapiente distinctio ea accusamus dicta, totam consequuntur rem accusantium est exercitationem ipsam officiis optio sint provident? Aspernatur labore repellendus vero, quo voluptates tempore magni dolores sint alias.</p>
-                        <a href="#" class="boton"> 
-                            <span>Ver mas</span>
+        <div class="contenedor">
+            <div class="contenedor__cards">
+
+                <div class="card">                              <!-- Bloque -->
+                    <a href="#" class="card__thumbnail">        <!-- nombre class -> 'nombreBloque__nombreElemento'   -->
+                        <img class="card__img" src="./assets/bosque.jpg" alt="Bosque con neblina">
+                    </a>
+                    <div class="card__textos">
+                        <h3 class="card__titulo">
+                            <a href="#" class="card__enlace-titulo">Lorem ipsum dolor sit amet</a> 
+                        </h3>
+                        <p class="card__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat minima adipisci culpa voluptate expedita provident, cumque iste repellendus totam eum, exercitationem, eaque vel porro saepe eveniet.
+                        </p>
+    
+
+                        <a href="#" class="boton boton--absolute">       <!-- Bloque --> <!-- Segunda clase para estilos del modificador -->
+                            <span class="boton__texto">Ver mas</span>
+                            <i class="fa-solid fa-arrow-right"></i>
                         </a>
-                    </h3>
+                    </div>
                 </div>
+
+                <div class="card">                              <!-- Bloque -->
+                    <a href="#" class="card__thumbnail">        <!-- nombre class -> 'nombreBloque__nombreElemento'   -->
+                        <img class="card__img" src="./assets/cieloColores.jpg" alt="Bosque con neblina">
+                    </a>
+                    <div class="card__textos">
+                        <h3 class="card__titulo">
+                            <a href="#" class="card__enlace-titulo">Lorem ipsum dolor sit amet</a> 
+                        </h3>
+                        <p class="card__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat minima adipisci culpa voluptate expedita provident, cumque iste repellendus totam eum, exercitationem, eaque vel porro saepe eveniet.
+                        </p>
+    
+
+                        <a href="#" class="boton boton--absolute">       <!-- Bloque --> <!-- Segunda clase para estilos del modificador -->
+                            <span class="boton__texto">Ver mas</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="frase">                             <!-- Bloque -->
+                <h2 class="frase__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                <a href="" role="button" class="boton boton--verde">
+                    <span class="boton__texto">Comprar</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </div>
         </div>
 
-        <script src=""></script>
+        <script src="https://kit.fontawesome.com/045ac57a4e.js" crossorigin="anonymous"></script>
     </body>
 </html>
