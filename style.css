@@ -34,7 +34,6 @@ a:hover {
 .card__thumbnail {
     width: 100%;
     max-width: 290px;
-    margin-right: 20px;
     border-radius: 10px;
     overflow: hidden;
     display: inline-block;
@@ -107,5 +106,8 @@ a:hover {
 @media (min-width:800px) {
     .card {
         flex-direction: row;
+    }
+    .card__thumbnail {
+        margin-right: 20px;
     }
 }
